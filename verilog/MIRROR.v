@@ -5,7 +5,7 @@ module MIRROR #(parameter SIZE=32)(
 );
   
     wire [SIZE-1:0] mirror;
-    wire [$clog2(SIZE)-1:0] m_buf;
+    wire [(SIZE/8)-1:0] m_buf;
 
     generate 
         genvar i;

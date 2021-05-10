@@ -27,7 +27,7 @@ module MUXROW #(parameter SIZE=32)(
     output  [SIZE-1:0]  out 
 );
 
-    wire [$clog2(SIZE)-1:0] S_buf;
+    wire [(SIZE/8)-1:0] S_buf;
 
     generate 
         genvar i;
